@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="textview" placeholder="Name" id="name"> <br />
+<input type="textview" placeholder="Company" id="company"> <br /> <br />
+
+
+<button onclick="myFunction()">Show Toast</button>
+
+<script>
+function myFunction() {
+var name = document.getElementById("name").value;
+var company = document.getElementById("company").value;
+
+MainActivity.callToast(name,company);
+
+document.getElementById("name").value="";
+document.getElementById("company").value="";
+}
+
+function showAlert(message) {
+alert(message);
+}
+
+</script>
+
+</body>
+</html>
